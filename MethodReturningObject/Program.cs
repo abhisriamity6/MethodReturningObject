@@ -38,6 +38,11 @@ namespace MethodReturningObject
             rectangleobj.Show();
             Console.WriteLine("Displaying Rectangle Area Before Enlarging");
             Console.WriteLine("{0}",rectangleobj.area());
+            Console.WriteLine("Displaying Rectangle After Enlarging");
+            rect rectEnobj = rectangleobj.factor(3, rectangleobj);
+            rectEnobj.Show();
+            Console.WriteLine("Displaying Rectangle Area After Enlarging");
+            Console.WriteLine("{0}", rectEnobj.area());
             Console.Read();
 
         }
